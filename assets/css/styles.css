@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background-image: url("../images/background.svg");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.ler-mais {
+  color: aqua;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-style: italic;
+  font-weight: bold;
+  padding: 3px;
+}
+.ler-mais::after {
+  content: "...";
+}
+.ler-mais:hover {
+  color: black;
+  background-color: rgb(106, 186, 255);
+  border-radius: 15px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.papers {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  max-height: 1000px;
+}
+
+.title-paper {
+  margin-bottom: 20px;
+}
+
+.paper-description {
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .title,
+  .subtitle {
+    text-align: center;
+  }
+
+  .papers {
+    padding: 10px;
+  }
+
+  .title-paper {
+    font-size: 1.2em;
+  }
+
+  .paper-description {
+    font-size: 0.9em;
+  }
+}
