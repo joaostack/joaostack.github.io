@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
     <title>Introdução ao Git - Papers</title>
   </head>
   <body>
@@ -12,5 +13,63 @@
         Bem-vindo ao meu artigo sobre Git! Aqui, você encontrará uma
         introdução ao sistema de controle de versão Git, suas principais
         funcionalidades e como começar a usá-lo em seus projetos.
+        </p>
+
+        <h2 class="section-title">O que é Git?</h2>
+        <p class="section-content">
+          Git é um sistema de controle de versão distribuído, criado por Linus
+          Torvalds em 2005. Ele permite que desenvolvedores rastreiem mudanças
+          no código-fonte ao longo do tempo, colaborem com outros e mantenham
+          um histórico completo de alterações.</p>
+
+        <h2 class="section-title">Principais Funcionalidades</h2>
+        <p class="section-content">
+          Git oferece várias funcionalidades poderosas, incluindo:</p>
+            <ul class="section-content">
+                <li>Rastreamento de alterações: Git registra cada modificação feita no código, permitindo que você veja o histórico completo.</li>
+                <li>Branches: Você pode criar ramificações (branches) para trabalhar em recursos ou correções de bugs sem afetar o código principal.</li>
+                <li>Mesclagem (Merge): Git facilita a combinação de diferentes branches, resolvendo conflitos quando necessário.</li>
+                <li>Colaboração: Vários desenvolvedores podem trabalhar no mesmo projeto simultaneamente, e Git ajuda a gerenciar essas contribuições.</li>
+                <li>Repositórios remotos: Git permite que você armazene seu código em servidores remotos, facilitando o compartilhamento e a colaboração.</li>
+            </ul>
+        <h2 class="section-title">Começando com Git</h2>
+        <p class="section-content">
+          Para começar a usar o Git, siga estas etapas:</p>
+            <ol class="section-content">
+                <li>Instale o Git em seu sistema em <a class="generic-a" href="https://git-scm.com/downloads" target="_blank">git-scm.com</a>.</li>
+                <li>Entre em uma pasta/projeto seu e crie um repositório local usando o comando
+                    <br><code class="terminal">git init</code>
+                </li>
+            </ol>
+        <p class="section-content">
+          Após a inicialização, você pode começar a adicionar arquivos ao seu repositório, fazer commits e criar branches. Aqui estão alguns comandos básicos:</p>
+            <ul class="section-content">
+                <li><code class="terminal">git add .</code> - Adiciona todos os arquivos ao staging area.</li>
+                <li><code class="terminal">git commit -m "Mensagem do commit"</code> - Cria um commit com uma mensagem descritiva.</li>
+                <li><code class="terminal">git branch nome-da-branch</code> - Cria uma nova branch.</li>
+                <li><code class="terminal">git checkout nome-da-branch</code> - Muda para a branch especificada.</li>
+                <li><code class="terminal">git log</code> - Mostra logs, total de commits, etc.</li>
+                <li><code class="terminal">git shortlog</code> - Mostra os logs de forma curta, total de commits, etc.</li>
+            </ul>
+        
+            <p class="section-content">
+              Se já existir um repositorio remoto, você pode conectá-lo usando o comando:</p>
+            <p class="section-content">
+              <code class="terminal">git remote add origin URL_DO_REPOSITORIO</code>
+            </p>
+            <p class="section-content">
+              E para enviar suas alterações para o repositório remoto, use:</p>
+            <p class="section-content">
+              <code class="terminal">git push origin nome-da-branch</code>
+            </p>
+
+        <p class="section-content">Branch Master x Main</p>
+        <p class="section-content">
+          A partir de 2020, o GitHub e outros provedores de repositórios começaram a adotar "main" como o nome padrão da branch principal, em vez de "master". Para renomear sua branch local de "master" para "main", você pode usar os seguintes comandos:</p>
+            <ol class="section-content">
+                <li><code class="terminal">git branch -m master main</code> - Renomeia a branch local.</li>
+                <li><code class="terminal">git push -u origin main</code> - Envia a nova branch para o repositório remoto.</li>
+                <li><code class="terminal">git push origin --delete master</code> - Remove a branch antiga do repositório remoto.</li>
+            </ol>
   </body>
 </html>
