@@ -63,7 +63,7 @@
               <code class="terminal">git push origin nome-da-branch</code>
             </p>
 
-        <p class="section-content">Branch Master x Main</p>
+        <h2 class="section-title">Branch Master x Main</h2>
         <p class="section-content">
           A partir de 2020, o GitHub e outros provedores de repositórios começaram a adotar "main" como o nome padrão da branch principal, em vez de "master". Para renomear sua branch local de "master" para "main", você pode usar os seguintes comandos:</p>
             <ol class="section-content">
@@ -71,5 +71,22 @@
                 <li><code class="terminal">git push -u origin main</code> - Envia a nova branch para o repositório remoto.</li>
                 <li><code class="terminal">git push origin --delete master</code> - Remove a branch antiga do repositório remoto.</li>
             </ol>
+
+        <h2 class="section-title">Realizando a autenticação a sua conta do GitHub</h2>
+        <p class="section-content">
+          Para autenticar sua conta do GitHub, você pode usar o comando:</p>
+            <p class="section-content">
+              <code class="terminal">git config --global user.name "Seu Nome"</code>
+            </p>
+            <p class="section-content">
+              E para definir seu e-mail associado à conta do GitHub, use:</p>
+            <p class="section-content">
+              <code class="terminal">git config --global user.email email@email.com</code>
+            <p class="section-content">
+                Se você não quiser especificar o e-mail, você pode usar o comando:</p>
+            </p>
+            <p class="section-content">
+                <code class="terminal">git config --global user.email "Seu Nome <>"</code>
+        
   </body>
 </html>

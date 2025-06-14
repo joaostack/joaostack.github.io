@@ -100,3 +100,12 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-size: 0.9em;
 }
+
+.section-content {
+  margin: 20px 0;
+}
+
+.section-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
