@@ -91,3 +91,12 @@ body {
   color: white;
   font-size: 0.9em;
 }
+
+.terminal {
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9em;
+}
