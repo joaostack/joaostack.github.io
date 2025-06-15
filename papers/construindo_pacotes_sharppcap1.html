@@ -66,6 +66,7 @@
             <pre>
                 <code class="language-csharp">
 using PacketDotNet;
+using SharpPcap;
 
 var ethernetPacket = new EthernetPacket(
     PhysicalAddress.Parse("00-11-22-33-44-55"), // Endereço MAC de origem
@@ -123,7 +124,6 @@ ethernetPacket.UpdateCalculatedValues(); // Calcular checksum
             Para enviar o pacote, você precisará de uma interface de rede. Você pode listar as interfaces disponíveis usando o seguinte código:
             <pre>
                 <code class="language-csharp">
-using SharpPcap;
 var devices = CaptureDeviceList.Instance;
 foreach (var device in devices)
 {
