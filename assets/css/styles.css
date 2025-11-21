@@ -1,215 +1,59 @@
-@import 'https://fonts.googleapis.com/css?family=Damion|Work+Sans:900';
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&display=swap');
 
-.text-outline(@h1border: 3px; @h1bordercolour: #fff;) {
-  text-shadow: @h1border 0px @h1bordercolour,
-              -@h1border 0px @h1bordercolour,
-               0px @h1border @h1bordercolour,
-              0px -@h1border @h1bordercolour,
-         @h1border @h1border @h1bordercolour,
-       -@h1border -@h1border @h1bordercolour,
-        @h1border -@h1border @h1bordercolour,
-        -@h1border @h1border @h1bordercolour;
-}
-.neon-text(@color:#ee91ae;@width:1px;@outline:#fff;) {
-  color: @color;
-  text-shadow: @width @width @outline,
-             -@width -@width @outline,
-              -@width @width @outline,
-              @width -@width @outline,
-                  @width 0px @outline,
-                 -@width 0px @outline,
-                 0px -@width @outline,
-                  0px @width @outline,
-                  0px 0px 12px @color;
-}
-body, html {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
 body {
-  background: linear-gradient(#121212, #212938, #304468, #ab38bc, #121212);
+  background-color:	#080116;
+  background-position: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:#2de2e6;
+  font-family: "Audiowide", sans-serif;
 }
 
-h1, h3 {
-  margin: 0;
-  line-height: 1;
-}
-h1 {
-  display: inline-block;
-  font-family: 'Work Sans', sans-serif;
-}
-h3 {
-  display: inline-block;
-  font-family: 'Damion', cursive;
-}
-
-.content-cont {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
-.text-body {
-  position: relative;
-  display: inline-block;
-  font-size: 16px;
-  h1 {
-    position: relative;
-    text-transform: uppercase;
-    font-size: 5em;
-    z-index:1;
-    span {
-      color: transparent;
-      background: linear-gradient(#000000 0%,#113e87 22%,#10cccc 50%,#000000 51%,#e21ddc 78%,#e21ddc 78%,#ffffff 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      &:before {
-        content: attr(text);
-      }
-      &:after {
-        content: attr(text);
-        position: absolute;
-        top: 0;
-        left: 0;
-        .text-outline();
-        opacity: 0.2;
-      }
-    }
-  }
-  h3 {
-    // positioning
-    position: absolute;
-    top: 70%;
-    right: 20%;
-    text-align: right;
-    //styles
-    font-size: 2.5em;
-    letter-spacing: -1px;
-    text-transform: capitalize;
-    transform: skewY(-10deg);
-    z-index:1;
-
-    // colours
-    .neon-text();
-  }
-  .shine {
-    position: absolute;
-    width: 5px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 7px 2px #fff;
-    z-index: 3;
-    &.one {
-      top: 15%;
-      left: 4%;
-      animation: shine1 1000ms alternate infinite;
-    }
-    &.two {
-      top: 55%;
-      left: 20%;
-      animation: shine1 1500ms alternate infinite;
-    }
-    &.three {
-      top: 15%;
-      left: 40%;
-      animation: shine1 1700ms alternate infinite;
-    }
-    &.four {
-      top: 15%;
-      left: 80%;
-      animation: shine1 900ms alternate infinite;
-    }
-    &.five {
-      top: 55%;
-      left: 95%;
-      animation: shine1 1300ms alternate infinite;
-    }
-  }
-}
-
-.moving-grid {
+.container {
+  width: 700px;
+  height: 350px;
   position: absolute;
-  top: 57%;
-  left: 0;
-  width: 100%;
-  height: 70%;
-  perspective: 1000px;
-  z-index: 1;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 8px;
-    left:;
-    width: 100%;
-    height: 10px;
-    box-shadow: -2px 0 21px -3px pink;
-  }
-  .container {
-    position: relative;
-    width: 100%;
-    height: 300%;
-    border: 2px solid pink;
-    box-sizing: border-box;
-    background-color: #010a1c;
-    transform-origin: top ;
-    transform: rotateX(65deg) translateY(10%);
-    overflow: hidden;
-    .static-lines {
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-      .vert {
-        display: inline-block;
-        height: 100%;
-        width: 2px;
-        background-color: pink;
-        margin-left: 4.5%;
-        box-shadow: 0 2px 21px pink;
-      }
-    }
-    .moving-lines {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 300%;
-      .horz {
-        display: inline-block;
-        width: 100%;
-        height: 3px;
-        margin-top: 4.8%;
-        background-color: pink;
-        box-shadow: 2px 0 21px pink;
-        animation: lines 600ms linear infinite;
-      }
-    }
-  }
-}
-@keyframes lines {
-  from {
-    transform: translateY(-65px);
-  }
-  to {
-    transform: translateY(65px);
-  }
+  background-color:	#0d0221;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 20px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 10px;
+  text-align: center;
 }
 
-@keyframes shine1 {
-  0% {
-    transform: rotate(0) scale(0);
-    opacity: 0;
-  }
-  50% {
-    transform: rotate(360deg) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(720deg) scale(0);
-    opacity: 0;
-  }
+a {
+  text-decoration: none;
+  color: #f222ff;
+  font-style: italic;
+}
+
+img {
+  transition: .1s;
+}
+
+img:hover {
+  width: 60px;
+}
+
+.art {
+  background-color: #060011;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  color: #ff901f;
+  font-weight: bold;
+}
+
+.terminal {
+  font-family: monospace;
+  text-align: left;
+  font-weight: bold;
+  padding: 5px;
+  color: #ff901f;
+  background-color: #060011;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  line-height: 0.3;
 }
