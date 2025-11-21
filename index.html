@@ -1,88 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>João H. - Papers</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>João H.</title>
+    <script>
+        // personalBrand();
+
+        $('.content-cont').find('h1').append('<div class="shine one"></div><div class="shine two"></div><div class="shine three"></div><div class="shine four"></div><div class="shine five"></div>');
+
+        $('.text-body').find('span').attr('text', $('.text-body').find('span').text());
+        $('.text-body').find('span').text('');
+    </script>
+</head>
+<body>
+    <section class="moving-grid">
     <div class="container">
-      <h1 class="title" style="color: lightblue">João H.</h1>
-      <h3 class="subtitle">Papers</h3>
-      <p class="subtitle">Bem-vind@ a minha coleção de Papers!</p>
-
-      <div class="papers">
-        <div class="paper">
-          <h2 class="title-paper">Introdução ao Git</h2>
-          <p class="paper-description">
-            Bem-vindo! Neste paper vamos aprender um pouco sobre Git! Aqui, você
-            encontrará uma introdução ao sistema de controle de versão Git, suas
-            principais funcionalidades e como começar a usá-lo em seus
-            projetos...
-          </p>
-          <a class="ler-mais" target="_blank" href="papers/gitbasics.html"
-            >Leia mais</a
-          >
+        <div class="static-lines">
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
+        <div class="vert"></div>
         </div>
-
-        <div class="paper">
-          <h2 class="title-paper">
-            Criando pacotes de rede utilizando a biblioteca C# SharpPcap
-          </h2>
-          <p class="paper-description">
-            Neste paper, vamos explorar como criar pacotes de rede utilizando a
-            biblioteca SharpPcap em C#. A SharpPcap é uma biblioteca
-            multiplataforma (Windows,Linux) poderosa que permite capturar e
-            enviar pacotes de rede de forma fácil e eficiente...
-          </p>
-          <a
-            class="ler-mais"
-            target="_blank"
-            href="papers/construindo_pacotes_sharppcap1.html"
-            >Leia mais</a
-          >
+        <div class="moving-lines">
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
+        <div class="horz"></div>
         </div>
-
-        <div class="paper">
-          <h2 class="title-paper">Desenvolvendo Minimal APIs com Dotnet</h2>
-          <p class="paper-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-            corporis culpa voluptatum non rerum, voluptas provident, ad fuga
-            dicta placeat quibusdam sed deleniti dolorem praesentium numquam
-            inventore possimus perferendis alias.
-          </p>
-          <a class="ler-mais" target="_blank" href="papers/minimal_api1.html"
-            >Leia mais</a
-          >
-        </div>
-
-        <div class="paper">
-          <h2 class="title-paper">Hackeando Tokens JWT</h2>
-          <p class="paper-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-            corporis culpa voluptatum non rerum, voluptas provident, ad fuga
-            dicta placeat quibusdam sed deleniti dolorem praesentium numquam
-            inventore possimus perferendis alias.
-          </p>
-          <a class="ler-mais" target="_blank" href="papers/jwt_hacking1.html"
-            >Leia mais</a
-          >
-        </div>
-      </div>
     </div>
-
-    <footer class="footer">
-      <p>
-        Desenvolvido por
-        <a
-          class="generic-a"
-          target="_blank"
-          href="https://joaostack.netlify.app/"
-          target="_blank"
-          >João H.</a
-        >
-      </p>
-    </footer>
-  </body>
+    </section>
+    <div class="content-cont">
+    <div class="text-body">
+        <h1>
+        <span>JOÃO H.</span>
+        <h3>joaostack</h3>
+        </h1>
+    </div>
+    </div>
+</body>
 </html>
