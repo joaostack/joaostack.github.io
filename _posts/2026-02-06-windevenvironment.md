@@ -1,5 +1,5 @@
 ---
-title:  "Exploiting Unisoc Redmi A5"
+title:  "Configuração do meu Windows voltado para o desenvolvimento DotNET/C#"
 subtitle:
 ---
 
