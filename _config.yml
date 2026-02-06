@@ -3,3 +3,27 @@ description: Seja bem-vindo, fique a vontade para ler meus papers.
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-hacker
+
+
+baseurl: /
+
+source: .
+destination: ./_site
+#permalink: /:title
+paginate: 5
+paginate_path: "/page:num/"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
