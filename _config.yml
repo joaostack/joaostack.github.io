@@ -3,11 +3,3 @@ description: Seja bem-vindo, fique a vontade para ler meus papers.
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-hacker
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
