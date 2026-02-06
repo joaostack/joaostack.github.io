@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Configuração do meu Windows voltado para o desenvolvimento DotNET/C#"
+date: 06-02-2026
 ---
 
 ## Sumário
