@@ -1,7 +1,6 @@
 ---
-layout: post
-title:  "Configuração do meu Windows voltado para o desenvolvimento DotNET/C#"
-date: 06-02-2026
+title:  "Exploiting Unisoc Redmi A5"
+subtitle:
 ---
 
 ## Sumário
