@@ -2,12 +2,28 @@
 layout: default
 ---
 
-<ul>
-    {% for post in paginator.posts %}
-    <li>
-        <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-        <p>{{ post.content | strip_html | truncatewords:10 }}</p>
-    </li>
-    {% endfor %}
-</ul>
+<div>
+    <h1>Olá, eu sou João Henryque 👋</h1>
+    <p>
+        Estudante de Ciência da Computação & Cybersecurity
+    </p>
+    
+    <ul>
+        {% for post in paginator.posts %}
+        <li>
+            <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+            <p>{{ post.content | strip_html | truncatewords:10 }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Contato</h2>
+    <p>
+        Email: <a href="mailto:joaohcontato@proton.me">joaohcontato@proton.me</a><br>
+    </p>
+    
+    <p>
+        João Henryque | Last update: {{ site.time | date: "%d/%m/%Y" }}
+    </p>
+</div>
