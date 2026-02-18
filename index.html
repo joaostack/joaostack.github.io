@@ -13,8 +13,8 @@ layout: default
         {% for post in paginator.posts %}
         <li>
             <h3><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h3>
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-            <p>{{ post.content | strip_html | truncatewords:10 }}</p>
+            <i><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></i>
+            <p><i>{{ post.content | strip_html | truncatewords:10 }}</i></p>
         </li>
         {% endfor %}
     </ul>
