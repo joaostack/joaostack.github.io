@@ -3,11 +3,12 @@ layout: default
 ---
 
 <div>
-    <h1>Olá, eu sou João Henryque 👋</h1>
+    <h2>Olá, eu sou João Henryque 👋</h2>
     <p>
         Estudante de Ciência da Computação & Cybersecurity
     </p>
-    
+
+    <h2>Papers</h2>
     <ul>
         {% for post in paginator.posts %}
         <li>
@@ -21,9 +22,5 @@ layout: default
     <h2>Contato</h2>
     <p>
         Email: <a href="mailto:joaohcontato@proton.me">joaohcontato@proton.me</a><br>
-    </p>
-    
-    <p>
-        João Henryque | Last update: {{ site.time | date: "%d/%m/%Y" }}
     </p>
 </div>
